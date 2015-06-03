@@ -1,0 +1,28 @@
+<section>
+
+  <div class="calendar">
+    <h2>Upcoming Events</h2>
+
+    <div class="calendar-header">
+      <div class="day">{{ todaysDay }}</div>
+      <div class="date">{{ todaysDate }}</div>
+      <br class="clear">
+    </div>
+    <div class="calendar-count">
+      <div>{{ events.length}} Events Coming Up </div>
+    </div>
+
+    <table>
+    <tr>
+        <th ng-click="doSort('date')">Date</th>
+        <th ng-click="doSort('occasion')">Event</th>
+        <th ng-click="doSort('invited_count')">Invited</th>
+    </tr>
+    <tr class="rows" ng-repeat="event in events | filter:eventFilter | orderBy:sortBy:reverse">
+        <td>{{ event.month + "/" + event.day + "/" + event.year | date }}</td>
+        <td>{{ event.occasion }}</td>
+        <td><span class="glyphicon glyphicon-user"></span>{{ event.invited_count }}</td>
+    </tr>
+    </table>
+  </div>
+</section>

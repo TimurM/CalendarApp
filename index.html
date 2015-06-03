@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="calendarApp">
+<head>
+    <title>Calendar App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main class="row">
+        <section class="col-md-5">
+          <div ng-view></div>
+        </section>
+    </main>
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/moment.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/calendarController.js"></script>
+
+</body>
+</html>

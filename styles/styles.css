@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*source: http://www.cssmatic.com/gradient-generator*/
+body {
+  background: linear-gradient(to bottom,
+    rgba(255,175,75,1) 0%,
+    rgba(255,150,19,0.44) 86%,
+    rgba(255,146,10,0.44) 100%);
+}
+main {
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.calendar {
+  border: 2px solid #8585AD;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.calendar > h2 {
+  padding-left: 10px;
+  color: #686868;
+}
+.calendar-header {
+  padding: 4px 10px;
+  background-color: #FF6600;
+  color: white;
+  font-size: 12px;
+}
+
+.calendar-header > .day {
+  float: left;
+}
+
+.calendar-header > .date {
+  float: right;
+}
+
+.calendar-count {
+  width: 100%;
+  padding: 5px;
+  color: #C0C0C0;
+  text-align: center;
+}
+
+
+table {
+  background-color: #F0F0F5;
+  width: 100%;
+  padding-right: 0px;
+}
+
+tr {
+  border-bottom: 1px solid #8585AD;
+  padding: 0px 5px 0px 5px;
+  width: 100%;
+}
+
+th {
+  padding: 5px;
+  color: #686868;
+}
+
+th:visited {
+    color: yellow;
+}
+
+td {
+  padding: 5px;
+  color: #686868;
+  font-size: 12px;
+}
+
+.rows:hover {
+  background-color: #FF6600;
+}
+
+.glyphicon-user {
+  color: #6699FF;
+  padding-right: 5px;
+}
